@@ -1,4 +1,4 @@
-# Team Prof DTK
+# Team LU
 
 ## Ideas:
 
