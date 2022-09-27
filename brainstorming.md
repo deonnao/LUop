@@ -14,16 +14,15 @@ In LUv: Dating app aimed specifically at students that currentlly attend Langsto
  - yes or no tap system that takes User Input and matches the "yes" and alerts both users
 
 LUFit: A fitness app that allows students to 
- -post progress pictures/videos
- -post workout plans
- -post meal plans
- -Find workout partners
+ - post progress pictures/videos
+ - post workout plans
+ - post meal plans
+ - Find workout partners
    
 LUTracker: an app that allows students to keep track of assignments due throughout the week
-    - Requirements:
-        - can be assessed without the internet(database)
-        - RecyclerView-To display lengthy lists
-        - needs a check off box next to each assignment due
+ - can be assessed without the internet(database)
+ - RecyclerView-To display lengthy lists
+ - needs a check off box next to each assignment due
    
 LUed: an app that provides LU students with Information on various topics such as credit, wealth building, and what you can do with your major
  - consume content that will help you be more efficient in your degree
