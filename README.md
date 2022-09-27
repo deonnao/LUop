@@ -14,11 +14,11 @@ LUop is a social media app that will allow students who attend Langston Universi
 ### App Evaluation
 
 - **Category: Social media**
-- **Mobile: Yes**
+- **Mobile: Camera and audio**
 - **Story: Langston University student will be able to connect with other students and stay up to date on latest LU news**
-- **Market: Social media**
-- **Habit: None**
-- **Scope: Langston University**
+- **Market: Service over 3,000 students**
+- **Habit: Low addiction**
+- **Scope: Clearly defined and buildable**
 
 ## Product Spec
 
