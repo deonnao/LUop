@@ -2,7 +2,7 @@
 
 ## Ideas:
 
-*Chosen Idea*
+###Chosen Idea
 LUop: messaging app that allows Langston students to communicate with one another
  - connect with students that attend Langston University 
  - Stay up to date on current events at Langston
