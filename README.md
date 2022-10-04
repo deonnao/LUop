@@ -25,9 +25,9 @@ LUop is a social media app that will allow students who attend Langston Universi
 ### 1. User Features (Required and Optional)
 
 **Required Features**
-
-* Messaging between students
-* LU news updates
+- [x] Login/SignUp
+- [] Messaging between students
+- [] LU news updates
 
 **Stretch Features**
 
