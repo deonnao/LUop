@@ -25,9 +25,9 @@ LUop is a social media app that will allow students who attend Langston Universi
 ### 1. User Features (Required and Optional)
 
 **Required Features**
-
-* Messaging between students
-* LU news updates
+- [x] Login/SignUp
+- [ ] Messaging between students
+- [ ] LU news updates
 
 **Stretch Features**
 
@@ -64,7 +64,11 @@ LUop is a social media app that will allow students who attend Langston Universi
 
 ## Wireframes
 
-<img src="wireframes-luop.jpg" width=600>
+<img src="wireframes-luop.jpg" width=400>
+
+##Login/Signup Interface
+
+<img src="luop-walkthrough.gif" width=400>
 
 ### [BONUS] Digital Wireframes & Mockups
 
