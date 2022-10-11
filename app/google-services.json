@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "307346532518",
+    "project_id": "luop-412ca",
+    "storage_bucket": "luop-412ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307346532518:android:873543df78539ff7a52c67",
+        "android_client_info": {
+          "package_name": "com.deonnao.luop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307346532518-56i02j9hlm0q9r3net51c8jqqae23fat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeoZMQs9rkhnl1csOKKnydxrXF7LfWyCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307346532518-56i02j9hlm0q9r3net51c8jqqae23fat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

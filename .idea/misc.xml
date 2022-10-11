@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/custom_input.xml" value="0.1505" />
+        <entry key="app/src/main/res/drawable/home_icon.xml" value="0.1505" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1505" />
+        <entry key="app/src/main/res/drawable/message_icon.xml" value="0.1505" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/activity_main_page.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.25104166666666666" />
       </map>
     </option>
   </component>
