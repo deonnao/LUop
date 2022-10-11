@@ -66,9 +66,13 @@ LUop is a social media app that will allow students who attend Langston Universi
 
 <img src="wireframes-luop.jpg" width=400>
 
-##Login/Signup Interface
+## Login/Signup Interface
 
 <img src="luop-walkthrough.gif" width=400>
+
+## User Authentication
+
+<img src="luop-milestone3-walkthrough.gif" width=400>
 
 ### [BONUS] Digital Wireframes & Mockups
 
