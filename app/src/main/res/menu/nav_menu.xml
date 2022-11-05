@@ -5,24 +5,28 @@
     <item
         android:id="@+id/action_home"
         android:icon="@drawable/home_icon"
+        android:enabled="true"
         android:title="Home"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_news"
         android:icon="@drawable/news_icon"
+        android:enabled="true"
         android:title="News"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_message"
         android:icon="@drawable/message_icon"
+        android:enabled="true"
         android:title="Message"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_profile"
         android:icon="@drawable/profile_icon"
+        android:enabled="true"
         android:title="Profile"
         app:showAsAction="always" />
 

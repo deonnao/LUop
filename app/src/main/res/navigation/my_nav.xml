@@ -3,26 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/profileFragment">
-
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.deonnao.luop.fragments.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        android:id="@+id/homeFragment"
+        android:name="com.deonnao.luop.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.deonnao.luop.fragments.NewsFragment"
+        android:name="com.deonnao.luop.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/messageFragment"
-        android:name="com.deonnao.luop.fragments.MessageFragment"
+        android:name="com.deonnao.luop.MessageFragment"
         android:label="fragment_message"
         tools:layout="@layout/fragment_message" />
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.deonnao.luop.fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/profileFragment"
+        android:name="com.deonnao.luop.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
