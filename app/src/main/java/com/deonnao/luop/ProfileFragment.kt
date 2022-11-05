@@ -1,11 +1,10 @@
-package com.deonnao.luop.fragments
+package com.deonnao.luop
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.deonnao.luop.R
 
 
 class ProfileFragment : Fragment() {

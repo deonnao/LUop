@@ -1,14 +1,11 @@
 package com.deonnao.luop
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
 import androidx.fragment.app.Fragment
-import com.deonnao.luop.fragments.HomeFragment
-import com.deonnao.luop.fragments.MessageFragment
-import com.deonnao.luop.fragments.NewsFragment
-import com.deonnao.luop.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class MainPage : AppCompatActivity() {
 
@@ -24,29 +21,31 @@ class MainPage : AppCompatActivity() {
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        // handle navigation selection
         bottomNavigationView.setOnItemSelectedListener { item ->
             var fragment: Fragment? = null
-            when (item.itemId) {
-                R.id.homeFragment -> fragment = homeFragments
-                R.id.newsFragment -> fragment = newsFragments
-                R.id.messageFragment -> fragment = messageFragments
-                R.id.profileFragment -> fragment = profileFragments
+            when(item.itemId) {
+                R.id.action_home -> fragment = homeFragments
+                R.id.action_news -> fragment = newsFragments
+                R.id.action_message -> fragment = messageFragments
+                R.id.action_profile -> fragment = profileFragments
             }
+
             if(fragment != null) {
                 replaceFragment(fragment)
             }
             true
         }
+            //Log.i("MainPage", fragment.toString())
+
         // Set default selection
         bottomNavigationView.selectedItemId = R.id.homeFragment
 
     }
 
-    private fun replaceFragment(homeFragment: Fragment) {
+    private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame_layout, homeFragment)
+        fragmentTransaction.replace(R.id.frame_layout, fragment)
         fragmentTransaction.commit()
     }
 }
