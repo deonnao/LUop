@@ -3,20 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background_image.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/btn_background.xml" value="0.161" />
+        <entry key="app/src/main/res/drawable/chat_box_background.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/custom_input.xml" value="0.1505" />
         <entry key="app/src/main/res/drawable/home_icon.xml" value="0.1505" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1505" />
+        <entry key="app/src/main/res/drawable/message_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/message_box_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/message_icon.xml" value="0.1505" />
-        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.24444444444444444" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/drawable/news_icon.xml" value="0.161" />
+        <entry key="app/src/main/res/drawable/profile_icon.xml" value="0.161" />
+        <entry key="app/src/main/res/drawable/received_message_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/sent_message_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_message.xml" value="0.25104166666666666" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_message.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_article.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/news_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/receive.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/send.xml" value="0.25" />
         <entry key="app/src/main/res/layout/user_layout.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.25104166666666666" />

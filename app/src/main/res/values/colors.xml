@@ -7,7 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="grey">#F3F3F3</color>
+    <color name="grey">#EAEAEA</color>
+    <color name="darkGrey">#AAAAAA</color>
+    <color name="blue">#0051B3</color>
     <color name="orange">#FF914D</color>
     <color name="luBlue">#0076D5</color>
+    <color name="addImageTextGrey">#636363</color>
+    <color name="gold">#D8AE5E</color>
+    <color name="charcoal">#3A3A3A</color>
 </resources>

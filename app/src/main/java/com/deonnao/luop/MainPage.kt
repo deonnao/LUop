@@ -15,17 +15,20 @@ class MainPage : AppCompatActivity() {
 
         // define your fragments here
         val homeFragments: Fragment = HomeFragment()
-        val newsFragments: Fragment = NewsFragment()
+        //val newsFragments: Fragment = NewsFragment()
         val messageFragments: Fragment = MessageFragment()
         val profileFragments: Fragment = ProfileFragment()
+        replaceFragment(homeFragments)
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        // Set default selection
+        bottomNavigationView.selectedItemId = R.id.homeFragment
 
         bottomNavigationView.setOnItemSelectedListener { item ->
             var fragment: Fragment? = null
             when(item.itemId) {
                 R.id.action_home -> fragment = homeFragments
-                R.id.action_news -> fragment = newsFragments
+               // R.id.action_news -> fragment = newsFragments
                 R.id.action_message -> fragment = messageFragments
                 R.id.action_profile -> fragment = profileFragments
             }
@@ -37,8 +40,6 @@ class MainPage : AppCompatActivity() {
         }
             //Log.i("MainPage", fragment.toString())
 
-        // Set default selection
-        bottomNavigationView.selectedItemId = R.id.homeFragment
 
     }
 

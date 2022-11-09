@@ -7,43 +7,20 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/etStudentName"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/ic_baseline_school_24"
-        android:drawablePadding="20dp"
-        android:hint="Name"
-        android:inputType="textEmailAddress"
-        android:paddingStart="10dp"
-        android:textColor="#000000"
-        android:textColorHint="@color/orange"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
         android:id="@+id/etEmail"
         android:layout_width="363dp"
         android:layout_height="55dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/ic_baseline_person_24"
-        android:drawablePadding="20dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingStart="10dp"
+        android:paddingStart="15dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/orange"
+        android:textColorHint="@color/darkGrey"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etStudentName" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -51,58 +28,67 @@
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/ic_baseline_info_24"
-        android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingStart="10dp"
-        android:textColor="#000000"
-        android:textColorHint="@color/orange"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkGrey"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/loginBtn"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:backgroundTint="#3BF4F2"
+        android:backgroundTint="@color/gold"
         android:text="Log In"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/grey"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
-    <Button
-        android:id="@+id/signUpBtn"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FF914D"
-        android:text="Sign Up"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/luop_logo_2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notRegisteredTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="25dp"
+        android:text="Not Registered?"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="235dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/luop_logo" />
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Create Account"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/notRegisteredTv"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
