@@ -1,7 +1,18 @@
 package com.deonnao.luop
 
-data class Article(
-    val title: String?,
-    val body: String?,
-    val author: String?,
-) : java.io.Serializable
+import android.widget.ImageView
+
+class Article {
+
+    var title: String? = null
+    var author: String? = null
+    //var imageUrl: String? = null
+
+    constructor() {}
+
+    constructor(title: String?, author: String?) {
+        this.title = title
+        this.author = author
+        //this.imageUrl = imageUrl
+    }
+}
