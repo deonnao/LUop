@@ -26,7 +26,7 @@ class NewsAdapter(private val articles: List<Article>) :
         holder.title.text = allArticles.title
         //holder.body.text = allArticles.body
         holder.author.text = allArticles.author
-       // Picasso.get().load(allArticles.imageUrl).into(holder.itemView.findViewById<ImageView>(R.id.newsImageIV))
+        Picasso.get().load(allArticles.imageUrl).into(holder.itemView.findViewById<ImageView>(R.id.newsImageIV))
     }
 
     override fun getItemCount(): Int {
@@ -40,7 +40,7 @@ class NewsAdapter(private val articles: List<Article>) :
         val title : TextView
         //val body : TextView
         val author : TextView
-       //val image : ImageView
+        val image : ImageView
 
         //We also create a constructor that accepts the entire item row
         //and does the view lookups to find each sub-view
@@ -48,8 +48,7 @@ class NewsAdapter(private val articles: List<Article>) :
             title = itemView.findViewById(R.id.titleTv)
             //body = itemView.findViewById(R.id.articleBody)
             author = itemView.findViewById(R.id.sourceTv)
-
-            //image = itemView.findViewById(R.id.newsImageIV)
+            image = itemView.findViewById(R.id.newsImageIV)
         }
     }
 }

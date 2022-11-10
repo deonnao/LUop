@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
@@ -32,6 +33,10 @@ class MessageFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
+        val bottomNavigationView = requireActivity().findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.visibility = View.VISIBLE
+
         val view = inflater.inflate(R.layout.fragment_message, container, false)
 
         val layoutManager = LinearLayoutManager(context)
@@ -52,6 +57,7 @@ class MessageFragment : Fragment() {
                         //userList.add(currentUser!!)
                         adapter.add(UserItem(currentUser!!))
                     }
+
                 }
                 recyclerView.adapter = adapter
                 adapter.notifyDataSetChanged()
@@ -74,6 +80,7 @@ class MessageFragment : Fragment() {
                 val intent = Intent(it.context, ChatActivity::class.java)
                 intent.putExtra("name", user.name)
                 intent.putExtra("uid", user.uid)
+                intent.putExtra("pic", user.profileImageUrl)
                 it.context?.startActivity(intent)
             }
         }

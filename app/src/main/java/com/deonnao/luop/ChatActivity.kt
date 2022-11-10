@@ -1,6 +1,6 @@
 package com.deonnao.luop
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -28,9 +28,11 @@ class ChatActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chat)
 
         val name = intent.getStringExtra("name")
-        Log.d("chat", name.toString())
+        Log.d("name", name.toString())
         val receiverUid = intent.getStringExtra("uid")
-        Log.d("chat", receiverUid.toString())
+        Log.d("receiverUid", receiverUid.toString())
+        val profileUrl = intent.getStringExtra("pic")
+        Log.d("profileUrl", profileUrl.toString())
         val senderUid = FirebaseAuth.getInstance().currentUser?.uid
         dbRef = FirebaseDatabase.getInstance().reference
 
@@ -43,7 +45,7 @@ class ChatActivity : AppCompatActivity() {
         messageBox = findViewById(R.id.messageBox)
         sendButton = findViewById(R.id.sendIV)
         messageList = ArrayList()
-        messageAdapter = MessageAdapter(this, messageList)
+        messageAdapter = MessageAdapter(this, messageList, profileUrl.toString())
         chatRecyclerView.layoutManager = LinearLayoutManager(this)
         chatRecyclerView.adapter = messageAdapter
 
@@ -65,7 +67,6 @@ class ChatActivity : AppCompatActivity() {
             }
 
         })
-
 
         //add the message to the database
         sendButton.setOnClickListener {
