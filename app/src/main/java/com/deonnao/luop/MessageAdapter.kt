@@ -15,7 +15,7 @@ import com.squareup.picasso.Picasso
 class MessageAdapter(val context: Context, val messageList: ArrayList<Message>, val receiverProfileUrl: String): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     val ITEM_RECEIVE = 1
-    val ITEM_SENT = 2
+    val ITEM_SENT = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         //inflate layout based on receive or sent

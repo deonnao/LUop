@@ -9,12 +9,12 @@
         android:title="Home"
         app:showAsAction="always" />
 
-    <!--<item
+    <item
         android:id="@+id/action_news"
         android:icon="@drawable/news_icon"
         android:enabled="true"
         android:title="News"
-        app:showAsAction="always" />-->
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_message"

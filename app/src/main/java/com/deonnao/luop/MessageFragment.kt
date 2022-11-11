@@ -2,6 +2,7 @@ package com.deonnao.luop
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.google.firebase.database.ktx.getValue
 import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
@@ -39,12 +41,14 @@ class MessageFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_message, container, false)
 
+        //val lastMessage = view.findViewById<TextView>(R.id.lastMessageTv)
         val layoutManager = LinearLayoutManager(context)
         recyclerView = view.findViewById(R.id.messageRV)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)
         auth = FirebaseAuth.getInstance()
         dbRef = FirebaseDatabase.getInstance().reference
+
 
         dbRef.child("user").addValueEventListener(object : ValueEventListener {
 
@@ -67,6 +71,7 @@ class MessageFragment : Fragment() {
             }
         })
 
+
         // Inflate the layout for this fragment
         return view
     }
@@ -75,7 +80,7 @@ class MessageFragment : Fragment() {
         override fun bind(viewHolder: GroupieViewHolder, position: Int) {
             viewHolder.itemView.findViewById<TextView>(R.id.username).text = user.name
             Picasso.get().load(user.profileImageUrl).into(viewHolder.itemView.findViewById<ImageView>(R.id.userProfileImage))
-
+            //viewHolder.itemView.findViewById<TextView>(R.id.lastMessageTv).text = message.message
             viewHolder.itemView.setOnClickListener {
                 val intent = Intent(it.context, ChatActivity::class.java)
                 intent.putExtra("name", user.name)
