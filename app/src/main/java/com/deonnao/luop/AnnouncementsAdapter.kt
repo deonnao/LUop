@@ -1,26 +1,22 @@
 package com.deonnao.luop
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import com.xwray.groupie.OnItemClickListener
-import kotlinx.coroutines.NonDisposableHandle.parent
 
-class NewsAdapter(private val articles: List<Article>) :
-    RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
+
+class AnnouncementsAdapter(private val articles: List<Article>) :
+    RecyclerView.Adapter<AnnouncementsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)
         // Inflate the custom layout
-        val contactView = inflater.inflate(R.layout.news_layout, parent, false)
+        val contactView = inflater.inflate(R.layout.announcements_layout, parent, false)
         // Return a new holder instance
         return ViewHolder(contactView)
     }
@@ -28,10 +24,10 @@ class NewsAdapter(private val articles: List<Article>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         //Get the data model based on position
         val allArticles = articles[position]
-        holder.title.text = allArticles.title
+        holder.titleAnnounce.text = allArticles.title
         //holder.body.text = allArticles.body
-        holder.author.text = allArticles.author
-        Picasso.get().load(allArticles.imageUrl).into(holder.itemView.findViewById<ImageView>(R.id.newsImageIV))
+        holder.authorAnnounce.text = allArticles.author
+        Picasso.get().load(allArticles.imageUrl).into(holder.itemView.findViewById<ImageView>(R.id.newsImageAnnounceIV))
 
     }
 
@@ -44,19 +40,19 @@ class NewsAdapter(private val articles: List<Article>) :
     // Used to cache the views within the item layout for fast access
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         //store references to elements in our layout view
-        val title : TextView
+        val titleAnnounce : TextView
         //val body : TextView
-        val author : TextView
-        val image : ImageView
+        val authorAnnounce : TextView
+        val imageAnnounce : ImageView
 
 
         //We also create a constructor that accepts the entire item row
         //and does the view lookups to find each sub-view
         init {
-            title = itemView.findViewById(R.id.titleTv)
+            titleAnnounce = itemView.findViewById(R.id.titleAnnounceTv)
             //body = itemView.findViewById(R.id.articleBody)
-            author = itemView.findViewById(R.id.sourceTv)
-            image = itemView.findViewById(R.id.newsImageIV)
+            authorAnnounce = itemView.findViewById(R.id.sourceAnnounceTv)
+            imageAnnounce = itemView.findViewById(R.id.newsImageAnnounceIV)
 
         }
 

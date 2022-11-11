@@ -4,16 +4,18 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
+import com.squareup.picasso.Picasso
 
 
-class MessageAdapter(val context: Context, val messageList: ArrayList<Message>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MessageAdapter(val context: Context, val messageList: ArrayList<Message>, val receiverProfileUrl: String): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     val ITEM_RECEIVE = 1
-    val ITEM_SENT = 2
+    val ITEM_SENT = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         //inflate layout based on receive or sent
@@ -41,6 +43,7 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<Message>):
             //for the receive view holder
             val viewHolder = holder as ReceiveViewHolder
             viewHolder.receiveMessage.text = currentMessage.message
+            Picasso.get().load(receiverProfileUrl).into(viewHolder.receiverPic)
         }
     }
 
@@ -67,7 +70,7 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<Message>):
 
     class ReceiveViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val receiveMessage = itemView.findViewById<TextView>(R.id.receiveTxt)
+        val receiverPic = itemView.findViewById<ImageView>(R.id.receiverPic)
     }
-
 
 }
